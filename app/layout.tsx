@@ -1,7 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { BUSINESS, SITE_URL } from "@/lib/constants";
+import {
+  BUSINESS,
+  EQUIPMENT_SIZE_RANGE,
+  SITE_URL,
+  WASH_FOLD_PRICING,
+} from "@/lib/constants";
 import { faqPageJsonLd, localBusinessJsonLd } from "@/lib/schema";
 
 const inter = Inter({
@@ -23,8 +28,7 @@ export const metadata: Metadata = {
       "Laundry Pro Ypsilanti | Wash & Fold, Pick-Up & Delivery | Open Late",
     template: "%s | Laundry Pro Ypsilanti",
   },
-  description:
-    "Ypsilanti's newest, cleanest laundromat. Brand-new machines, wash & fold from $1.50/lb, pick-up and delivery, 25¢ dryers. Open 6 AM–2 AM daily. Next to Toarmina's Pizza at 1510 Washtenaw Ave.",
+  description: `Ypsilanti's newest, cleanest laundromat. ${EQUIPMENT_SIZE_RANGE.metaBrief} (small loads to commercial-capacity), ${WASH_FOLD_PRICING.metaFragment}, pick-up and delivery, 25¢ dryers. Open 6 AM–2 AM daily. Next to Toarmina's Pizza at 1510 Washtenaw Ave.`,
   applicationName: BUSINESS.name,
   authors: [{ name: BUSINESS.name, url: SITE_URL }],
   creator: BUSINESS.name,
@@ -44,8 +48,7 @@ export const metadata: Metadata = {
     siteName: BUSINESS.name,
     title:
       "Laundry Pro Ypsilanti | Wash & Fold, Pick-Up & Delivery | Open Late",
-    description:
-      "Ypsilanti's newest, cleanest laundromat. Brand-new machines, wash & fold from $1.50/lb, pick-up and delivery, 25¢ dryers. Open 6 AM–2 AM daily. Next to Toarmina's Pizza at 1510 Washtenaw Ave.",
+    description: `Ypsilanti's newest, cleanest laundromat. ${EQUIPMENT_SIZE_RANGE.metaBrief} (small loads to commercial-capacity), ${WASH_FOLD_PRICING.metaFragment}, pick-up and delivery, 25¢ dryers. Open 6 AM–2 AM daily. Next to Toarmina's Pizza at 1510 Washtenaw Ave.`,
     images: [
       {
         url: "/images/storefront.png",
@@ -59,8 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title:
       "Laundry Pro Ypsilanti | Wash & Fold, Pick-Up & Delivery | Open Late",
-    description:
-      "Ypsilanti's newest, cleanest laundromat. Brand-new machines, wash & fold from $1.50/lb, pick-up and delivery, 25¢ dryers. Open 6 AM–2 AM daily.",
+    description: `Ypsilanti's newest, cleanest laundromat. ${EQUIPMENT_SIZE_RANGE.metaBrief} (small loads to commercial-capacity), ${WASH_FOLD_PRICING.metaFragment}, pick-up and delivery, 25¢ dryers. Open 6 AM–2 AM daily.`,
     images: ["/images/storefront.png"],
   },
   robots: {

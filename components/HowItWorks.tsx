@@ -11,7 +11,7 @@ const steps = [
     step: "2",
     title: "Pay Your Way",
     description:
-      "Use coins, card, or the DexterPay app. No quarters? No problem — we have a change machine on-site.",
+      "Use coins, card, or the DexterPay app. Download the Dexter app and get free washes with your rewards. No quarters? No problem — we have a change machine on-site.",
   },
   {
     step: "3",

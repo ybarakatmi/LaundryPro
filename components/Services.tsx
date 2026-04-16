@@ -9,21 +9,21 @@ import {
 } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { ButtonLink } from "@/components/ui/button-link";
+import { EQUIPMENT_SIZE_RANGE, WASH_FOLD_PRICING } from "@/lib/constants";
 
 const services = [
   {
     icon: WashingMachine,
     title: "Self-Service Laundry",
-    description:
-      "Brand-new, high-efficiency washers and dryers. Spacious, clean facility with free WiFi.",
-    price: "Dryers from 25¢/cycle",
+    description: EQUIPMENT_SIZE_RANGE.selfServiceCard,
+    price: "Dryers from 25¢/cycle · multiple dryer sizes",
   },
   {
     icon: Shirt,
     title: "Wash & Fold",
     description:
-      "Drop off your laundry and we'll wash, dry, and fold it. Ready same day.",
-    price: "$1.50/lb",
+      "Drop off your laundry and we'll wash, dry, and fold it. Next-day or same-day turnaround — see rates below.",
+    price: WASH_FOLD_PRICING.cardLine,
   },
   {
     icon: Truck,
@@ -49,8 +49,7 @@ const services = [
   {
     icon: Wind,
     title: "Comforter & Bulky Items",
-    description:
-      "Oversized washers for comforters, blankets, and bulky items.",
+    description: EQUIPMENT_SIZE_RANGE.bulkyCard,
     price: "$5 off comforter special",
   },
 ] as const;
@@ -64,7 +63,10 @@ export function Services() {
         </h2>
         <p className="mt-4 text-lg text-slate-600">
           Self-service, full-service, and everything in between — all under one
-          roof on Washtenaw Avenue in Ypsilanti.
+          roof on Washtenaw Avenue in Ypsilanti.{" "}
+          <span className="font-medium text-slate-700">
+            {EQUIPMENT_SIZE_RANGE.heroHint}
+          </span>
         </p>
       </div>
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

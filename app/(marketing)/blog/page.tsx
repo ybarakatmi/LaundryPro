@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Laundry Pro Blog | Ypsilanti MI",
     description:
-      "Guides and tips from Laundry Pro on Washtenaw Avenue — open late with brand-new machines.",
+      "Guides and tips from Laundry Pro on Washtenaw Avenue — open late with brand-new multi-size Dexter washers and dryers.",
     url: `${SITE_URL}/blog`,
     type: "website",
   },

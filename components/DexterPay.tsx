@@ -11,9 +11,10 @@ export function DexterPay() {
             Mobile Payment
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Pay With Your Phone — No Coins Needed
+            Download the Dexter App Pay and get free washes with your rewards
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-slate-300">
+            Download the Dexter app Pay and get free washes with your rewards.
             Make your laundry day easier with the security and freedom of
             DexterPay. With this mobile app, you can pay securely using mobile
             pay instead of coins. Plus, you can monitor the progress of every
@@ -22,7 +23,7 @@ export function DexterPay() {
           <ul className="mt-6 space-y-3 text-slate-300">
             <li className="flex items-start gap-3">
               <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-blue-400" />
-              Pay securely from your phone — no quarters required
+              Download the Dexter app Pay to unlock rewards like free washes, then pay securely from your phone — no quarters required
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-blue-400" />

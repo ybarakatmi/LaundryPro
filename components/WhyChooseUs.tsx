@@ -2,9 +2,10 @@ import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { ButtonLink } from "@/components/ui/button-link";
+import { EQUIPMENT_SIZE_RANGE } from "@/lib/constants";
 
 const points = [
-  "Brand-new, high-efficiency machines",
+  EQUIPMENT_SIZE_RANGE.whyChooseBullet,
   "Cleanest laundromat in Ypsilanti",
   "Open until 2 AM — perfect for students and night owls",
   "Free WiFi throughout the facility",
@@ -20,7 +21,7 @@ export function WhyChooseUs() {
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg lg:order-1">
           <Image
             src="/dryers-row.webp"
-            alt="Brand new Dexter high-efficiency front-loading washing machine at Laundry Pro laundromat in Ypsilanti Michigan featuring DexterPay mobile app support"
+            alt="Rows of Dexter stack dryers and multiple machine sizes at Laundry Pro laundromat in Ypsilanti Michigan"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 50vw, 100vw"

@@ -11,7 +11,7 @@ const benefits = [
   {
     title: "Quick & Flexible Turnaround",
     description:
-      "Same-day and next-day options. Drop off in the morning, pick up by evening — on your schedule.",
+      "Same-day and next-day options, with the right washer and dryer size picked for your load—from a small bag to bulky bedding. Drop off in the morning, pick up by evening — on your schedule.",
     image: "/dryers-row.webp",
   },
   {

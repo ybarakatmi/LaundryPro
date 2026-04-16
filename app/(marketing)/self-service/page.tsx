@@ -9,8 +9,7 @@ import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Self-Service Laundry | Laundry Pro Ypsilanti",
-  description:
-    "State-of-the-art self-service laundry in Ypsilanti. Brand-new Dexter washers and dryers, free WiFi, open 6 AM – 2 AM daily.",
+  description: `Self-service laundry in Ypsilanti with multiple sizes of Dexter washers and dryers—from small loads to commercial capacity. Free WiFi, open 6 AM – 2 AM daily.`,
   alternates: { canonical: `${SITE_URL}/self-service` },
 };
 
@@ -73,10 +72,12 @@ export default function SelfServicePage() {
               At <strong className="text-white">Laundry Pro</strong>, we make
               self-service laundry simple, fast, and worry-free. Our{" "}
               <strong className="text-white">
-                state-of-the-art, high-capacity washers and dryers
-              </strong>{" "}
-              are built to handle everything from small loads to bulky
-              comforters — all while saving you time and energy.
+                brand-new Dexter washers and dryers come in multiple sizes
+              </strong>
+              —compact machines for a quick small load, large drums for family
+              laundry, extra-large units for bulky bedding, and
+              commercial-capacity equipment when you need maximum drum space for
+              king-size comforters or big batches.
             </p>
             <p className="mt-4 leading-relaxed text-slate-300">
               Enjoy a{" "}
@@ -84,9 +85,9 @@ export default function SelfServicePage() {
                 clean, spacious, and comfortable environment
               </strong>{" "}
               with plenty of folding space, seating, and free WiFi while you
-              wait. Whether you&apos;re washing a week&apos;s worth of clothes
-              or just need a quick refresh, you&apos;ll always find an available
-              machine ready for you.
+              wait. Whether it&apos;s a few pieces, a full family hamper, or a
+              king-size comforter, there&apos;s a washer and dryer sized right
+              for the job.
             </p>
             <p className="mt-4 leading-relaxed text-slate-300">
               Discover why Laundry Pro is Ypsilanti&apos;s go-to spot for{" "}

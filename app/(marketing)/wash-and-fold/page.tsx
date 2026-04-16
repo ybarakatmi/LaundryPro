@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Section } from "@/components/ui/section";
 import { ButtonLink } from "@/components/ui/button-link";
 import { WashFoldWhyChoose } from "@/components/WashFoldWhyChoose";
 import { WashFoldHowItWorks } from "@/components/WashFoldHowItWorks";
 import { GoogleReviews } from "@/components/GoogleReviews";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, WASH_FOLD_PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Wash & Fold Service | Laundry Pro Ypsilanti",
-  description:
-    "Professional wash & fold laundry service in Ypsilanti. Drop off your clothes and we'll wash, dry, and neatly fold everything. Same-day available.",
+  description: `Professional wash & fold in Ypsilanti. ${WASH_FOLD_PRICING.sentence} Drop off and we'll wash, dry, and neatly fold everything.`,
   alternates: { canonical: `${SITE_URL}/wash-and-fold` },
 };
 
@@ -48,18 +46,22 @@ export default function WashAndFoldPage() {
             <p className="mt-4 leading-relaxed text-slate-600">
               Simply drop off your clothes, and our team will{" "}
               <strong>wash, dry, and neatly fold</strong> everything for you.
-              We use brand-new, <strong>high-capacity Dexter machines</strong>,
-              comfortable facilities, <strong>free Wi-Fi</strong>, and
-              flexible scheduling to make your life easier.
+              We use brand-new Dexter equipment and match the{" "}
+              <strong>right washer and dryer size</strong> to your load—from
+              compact drums to commercial-capacity machines for bulky items. Our
+              team uses <strong>high-efficiency Dexter machines</strong>,{" "}
+              <strong>comfortable facilities</strong>,{" "}
+              <strong>free Wi-Fi</strong>, and flexible scheduling to make your
+              life easier.
             </p>
             <p className="mt-4 leading-relaxed text-slate-600">
               Whether it&apos;s your weekly load, a busy schedule, or just the
               desire to skip folding — we guarantee your clothes come back{" "}
               <strong>fresh, clean, and perfectly folded</strong> every time.
             </p>
-            <p className="mt-4 leading-relaxed text-slate-700 font-medium">
-              Visit Laundry Pro today and experience how simple laundry can be
-              — starting at just <strong>$1.50/lb</strong>. Drop off your
+            <p className="mt-4 font-medium leading-relaxed text-slate-700">
+              Visit Laundry Pro today and experience how simple laundry can be —{" "}
+              <strong>{WASH_FOLD_PRICING.cardLine}</strong>. Drop off your
               laundry and enjoy the rest of your day.
             </p>
             <div className="mt-8">

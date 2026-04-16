@@ -9,14 +9,14 @@ import { BUSINESS } from "@/lib/constants";
 const testimonials = [
   {
     quote:
-      "Spotless machines and the whole place smells fresh — not like a typical laundromat. Staff is friendly and dryers actually dry on the first cycle.",
+      "Spotless machines in all sizes — I use a small washer for gym clothes and the big ones for bedding. Staff is friendly and dryers actually dry on the first cycle.",
     name: "Jordan M.",
     source: "Google",
     accent: "border-emerald-200 bg-emerald-50 text-emerald-900",
   },
   {
     quote:
-      "I'm at EMU and this is the only late-night spot I trust. WiFi is solid for homework and prices beat everywhere else I've tried in Ypsi.",
+      "I'm at EMU and this is the only late-night spot I trust. Plenty of machine sizes so I'm not stuck waiting, WiFi is solid for homework, and prices beat everywhere else I've tried in Ypsi.",
     name: "Alicia R.",
     source: "Yelp",
     accent: "border-red-200 bg-red-50 text-red-900",
@@ -30,7 +30,7 @@ const testimonials = [
   },
   {
     quote:
-      "We bring comforters here monthly — huge washers and everything comes out fluffy. The 25¢ dryer deal adds up for our family of four.",
+      "We bring king-size comforters here monthly — the commercial-size washers actually fit them and everything comes out fluffy. The 25¢ dryer deal adds up for our family of four.",
     name: "The Nguyen Family",
     source: "Google",
     accent: "border-emerald-200 bg-emerald-50 text-emerald-900",

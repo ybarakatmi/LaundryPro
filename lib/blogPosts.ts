@@ -1,3 +1,5 @@
+import { WASH_FOLD_PRICING } from "@/lib/constants";
+
 export type BlogBlock =
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
@@ -44,7 +46,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Self-service laundry is the classic laundromat experience. You sort, load, and start the machines yourself, then fold on wide tables while your clothes dry. At Laundry Pro, washers and dryers are new, easy to use, and paired with free WiFi so you can study or stream while you wait. Dryers are priced starting at just 25¢ per cycle—an everyday value for students budgeting around textbooks and rent. Bring your own detergent or purchase supplies on site, follow garment care labels, and you can finish multiple loads in a single visit.",
+        text: "Self-service laundry is the classic laundromat experience. You sort, load, and start the machines yourself, then fold on wide tables while your clothes dry. At Laundry Pro, Dexter washers and dryers come in multiple sizes—pick a compact machine for a quick small load, larger drums for everyday laundry, or commercial-capacity equipment for king-size comforters and heavy batches. Everything is new, easy to use, and paired with free WiFi so you can study or stream while you wait. Dryers are priced starting at just 25¢ per cycle—an everyday value for students budgeting around textbooks and rent. Bring your own detergent or purchase supplies on site, follow garment care labels, and you can finish multiple loads in a single visit.",
       },
       {
         type: "h3",
@@ -52,7 +54,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Wash and fold is ideal when you want clean, neatly folded clothes without standing at the machines. You drop off sorted laundry, and the team washes, dries, and folds it to professional standards. Laundry Pro offers wash and fold at $1.50 per pound with same-day turnaround when dropped off early—perfect before a busy EMU exam week or after travel. Communicate stains, temperature preferences, and delicates up front so every load is handled the way you expect.",
+        text: `Wash and fold is ideal when you want clean, neatly folded clothes without standing at the machines. You drop off sorted laundry, and the team washes, dries, and folds it to professional standards. ${WASH_FOLD_PRICING.sentence} Choose next-day to save or same-day when you need clothes back fast—perfect before a busy EMU exam week or after travel. Communicate stains, temperature preferences, and delicates up front so every load is handled the way you expect.`,
       },
       {
         type: "h3",
@@ -68,7 +70,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Home machines often struggle with comforters, blankets, and pillows. Commercial washers at Laundry Pro are sized for bulky items, helping detergents rinse thoroughly and reducing wear on fabrics. Ask about the comforter special to save on deep-cleaning the bedding that keeps Michigan winters comfortable. Planning a move or hosting guests near Ypsilanti? Knock out bedding and curtains in one efficient stop instead of risking an unbalanced load at home.",
+        text: "Home machines often struggle with comforters, blankets, and pillows. At Laundry Pro, step up to large and commercial-capacity Dexter washers that swallow king-size comforters and heavy bedding, helping detergents rinse thoroughly and reducing wear on fabrics. Ask about the comforter special to save on deep-cleaning the bedding that keeps Michigan winters comfortable. Planning a move or hosting guests near Ypsilanti? Knock out bedding and curtains in one efficient stop instead of risking an unbalanced load at home.",
       },
       {
         type: "h2",
@@ -84,8 +86,7 @@ export const blogPosts: BlogPost[] = [
     slug: "save-money-on-laundry",
     title: "How to Save Money on Laundry — Tips from Laundry Pro",
     date: "2026-02-03",
-    excerpt:
-      "Stretch your budget with smart sorting, dryer discipline, and Laundry Pro’s 25¢ dryer cycles and $1.50/lb wash & fold in Ypsilanti.",
+    excerpt: `Stretch your budget with smart sorting, dryer discipline, and Laundry Pro's 25¢ dryer cycles and wash & fold (${WASH_FOLD_PRICING.cardLine}) in Ypsilanti.`,
     image: "/storefront-day.jpeg",
     imageAlt:
       "Laundry supplies and folded towels suggesting affordable laundry habits at Laundry Pro Ypsilanti Michigan",
@@ -97,7 +98,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Half-full washers waste water and detergent; overstuffed drums prevent proper agitation. Sort lights, darks, and heavy items like towels or jeans so every cycle runs at peak efficiency. At Laundry Pro in Ypsilanti, high-efficiency machines are calibrated for commercial performance, meaning you get cleaner results per dollar when loads are balanced. Pre-treat stains at home with a dab of detergent to avoid rewashes that silently double your cost.",
+        text: "Half-full washers waste water and detergent; overstuffed drums prevent proper agitation. Sort lights, darks, and heavy items like towels or jeans so every cycle runs at peak efficiency. At Laundry Pro in Ypsilanti, choose a washer size that matches the job—smaller machines for light loads, bigger drums for towels and jeans, and the largest commercial-capacity units when you are washing bedding or a full household batch. High-efficiency Dexter equipment means cleaner results per dollar when loads are balanced. Pre-treat stains at home with a dab of detergent to avoid rewashes that silently double your cost.",
       },
       {
         type: "h2",
@@ -105,7 +106,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Dryers consume most of the coins customers spend in a laundromat. Shake out clothes before they go in, separate lightweight fabrics from heavy cotton, and check mid-cycle—many items finish faster than the timer suggests. Laundry Pro advertises dryers from 25¢ per cycle, among the lowest dryer rates in town, so trimming even five minutes per visit adds up for EMU students doing laundry weekly. Clean the lint area if you see buildup; better airflow means shorter dry times and lower spend.",
+        text: "Dryers consume most of the coins customers spend in a laundromat. Shake out clothes before they go in, separate lightweight fabrics from heavy cotton, and check mid-cycle—many items finish faster than the timer suggests. Laundry Pro has dryers in multiple sizes to pair with your wash load, with cycles from 25¢ among the lowest dryer rates in town—trimming even five minutes per visit adds up for EMU students doing laundry weekly. Clean the lint area if you see buildup; better airflow means shorter dry times and lower spend.",
       },
       {
         type: "h3",
@@ -113,7 +114,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Wash and fold at $1.50 per pound is predictable: you know the price before you drop off. If your time is tight—clinical rotations, double shifts, or finals—paying per pound can be cheaper than losing study hours or paying for parking loops. Bundle delicates in mesh bags, empty pockets, and label any special instructions to avoid surprises. Same-day service at Laundry Pro helps you stay on schedule without buying extra clothing just because the hamper backed up.",
+        text: `Wash and fold at Laundry Pro is straightforward: ${WASH_FOLD_PRICING.cardLine}. If your time is tight—clinical rotations, double shifts, or finals—choosing next-day service can keep costs down while same-day stays available when you need it. Bundle delicates in mesh bags, empty pockets, and label any special instructions to avoid surprises. The same-day rate helps you stay on schedule without buying extra clothing just because the hamper backed up.`,
       },
       {
         type: "h2",
@@ -150,7 +151,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Eastern Michigan University students juggle lectures, labs, part-time jobs, and internships. Laundry rarely earns a spot on the calendar—until you are out of socks. Wash and fold at Laundry Pro translates hamper chaos into neatly stacked clothes, priced at $1.50 per pound with same-day options when you plan ahead. Instead of guarding machines between classes, you drop off on Washtenaw Avenue and reclaim hours for studying or campus organizations.",
+        text: `Eastern Michigan University students juggle lectures, labs, part-time jobs, and internships. Laundry rarely earns a spot on the calendar—until you are out of socks. Wash and fold at Laundry Pro translates hamper chaos into neatly stacked clothes. ${WASH_FOLD_PRICING.sentence} Instead of guarding machines between classes, you drop off on Washtenaw Avenue and reclaim hours for studying or campus organizations.`,
       },
       {
         type: "h2",
@@ -174,7 +175,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Not every week needs full-service. When you have time but want better equipment than a dorm washer, Laundry Pro’s self-service floor delivers spotless conditions and dryers from 25¢ per cycle. Many EMU students alternate: self-service on light weeks, wash and fold during finals. Knowing both options exist prevents panic when your schedule implodes.",
+        text: "Not every week needs full-service. When you have time but want better equipment than a dorm washer, Laundry Pro’s self-service floor delivers spotless conditions, a full lineup of washer and dryer sizes, and dryers from 25¢ per cycle. Many EMU students alternate: self-service on light weeks, wash and fold during finals. Knowing both options exist prevents panic when your schedule implodes.",
       },
       {
         type: "h2",
@@ -203,7 +204,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Ypsilanti runs on small businesses that understand neighborhood rhythms. Laundry Pro and Toarmina's Pizza share more than an address—they share customers who want quality without hassle. Laundry Pro brings spotless floors, Dexter high-efficiency machines, and late hours until 2 AM; Toarmina's brings the World's Biggest Pizza, wings, subs, and the kind of comfort food that makes waiting actually enjoyable. Together they turn a chore into a ritual people recommend to friends.",
+        text: "Ypsilanti runs on small businesses that understand neighborhood rhythms. Laundry Pro and Toarmina's Pizza share more than an address—they share customers who want quality without hassle. Laundry Pro brings spotless floors, Dexter high-efficiency washers and dryers in multiple sizes (small loads through commercial-capacity), and late hours until 2 AM; Toarmina's brings the World's Biggest Pizza, wings, subs, and the kind of comfort food that makes waiting actually enjoyable. Together they turn a chore into a ritual people recommend to friends.",
       },
       {
         type: "h2",
@@ -227,7 +228,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "A bright laundromat signals respect for customers. Laundry Pro emphasizes cleanliness and modern payment options like DexterPay-friendly equipment, while Toarmina's focuses on consistent kitchen quality. Both businesses anchor 1510 Washtenaw Ave as a place you can trust after dark—important when many competitors close early. Free WiFi and attentive staff round out the experience so you never feel stuck watching a spinner alone.",
+        text: "A bright laundromat signals respect for customers. Laundry Pro emphasizes cleanliness and modern payment options like DexterPay-friendly equipment—download the Dexter app Pay to unlock rewards like free washes—while Toarmina's focuses on consistent kitchen quality. Both businesses anchor 1510 Washtenaw Ave as a place you can trust after dark—important when many competitors close early. Free WiFi and attentive staff round out the experience so you never feel stuck watching a spinner alone.",
       },
       {
         type: "h2",

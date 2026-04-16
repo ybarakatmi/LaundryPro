@@ -1,12 +1,16 @@
-import { BUSINESS, SITE_URL } from "@/lib/constants";
+import {
+  BUSINESS,
+  EQUIPMENT_SIZE_RANGE,
+  SITE_URL,
+  WASH_FOLD_PRICING,
+} from "@/lib/constants";
 
 export function localBusinessJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Laundromat",
     name: BUSINESS.name,
-    description:
-      "Ypsilanti's newest, cleanest laundromat offering self-service laundry, wash & fold, pick-up, drop-off, and delivery services. Brand-new high-efficiency machines, free WiFi, open until 2 AM daily.",
+    description: `Ypsilanti's newest, cleanest laundromat offering self-service laundry with multiple sizes of Dexter washers and dryers (small loads through commercial-capacity for king-size comforters), wash & fold (${WASH_FOLD_PRICING.cardLine}), pick-up, drop-off, and delivery. Brand-new high-efficiency equipment, free WiFi, open until 2 AM daily.`,
     url: SITE_URL,
     telephone: BUSINESS.phoneTel,
     address: {
@@ -66,18 +70,30 @@ export function localBusinessJsonLd() {
           itemOffered: {
             "@type": "Service",
             name: "Self-Service Laundry",
-            description:
-              "Brand-new high-efficiency washers and dryers for self-service use.",
+            description: EQUIPMENT_SIZE_RANGE.selfServiceCard,
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Wash & Fold",
-            description: "Professional wash, dry, and fold service.",
+            name: "Wash & Fold — Next Day",
+            description:
+              "Professional wash, dry, and fold with next-day turnaround.",
           },
           price: "1.50",
+          priceCurrency: "USD",
+          unitText: "per pound",
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Wash & Fold — Same Day",
+            description:
+              "Professional wash, dry, and fold with same-day turnaround.",
+          },
+          price: "2.00",
           priceCurrency: "USD",
           unitText: "per pound",
         },
@@ -102,7 +118,8 @@ export function localBusinessJsonLd() {
           itemOffered: {
             "@type": "Service",
             name: "Comforter Cleaning",
-            description: "Oversized machines for comforters and bulky items.",
+            description:
+              "Commercial-capacity washers for king-size comforters, blankets, and bulky items.",
           },
         },
       ],
@@ -128,12 +145,16 @@ const FAQ_ITEMS: { question: string; answer: string }[] = [
   },
   {
     question: "How much does wash and fold cost?",
-    answer: "Our wash and fold service is $1.50 per pound.",
+    answer: WASH_FOLD_PRICING.sentence,
+  },
+  {
+    question: "Does Laundry Pro have different washer and dryer sizes?",
+    answer: EQUIPMENT_SIZE_RANGE.faqMachineSizes,
   },
   {
     question: "How much do dryers cost?",
     answer:
-      "Dryers start at just 25¢ per cycle — the lowest in Ypsilanti.",
+      "Dryers start at just 25¢ per cycle — the lowest in Ypsilanti. We have dryers in multiple sizes so you can match your dry cycle to small loads or bulky bedding.",
   },
   {
     question: "Is there WiFi at Laundry Pro?",

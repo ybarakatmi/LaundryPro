@@ -51,13 +51,13 @@ const reviews = [
     name: "Microbial Protection Services",
     rating: 5,
     timeAgo: "5 months ago",
-    text: "Love this place it's got brand new machines and it's got that Dexter app pay. You can control all washers and dryers from your phone.",
+    text: "Love this place it's got brand new machines and it's got that Dexter app pay. Download the Dexter app Pay and get free washes with your rewards. You can control all washers and dryers from your phone.",
   },
   {
     name: "Kayla",
     rating: 5,
     timeAgo: "8 months ago",
-    text: "The laundromat is very clean and the mobile app is very convenient. It's a nice way to keep track of when your laundry will be done and ready. I will definitely be back to do bigger loads of laundry!",
+    text: "The laundromat is very clean and the mobile app is very convenient. Download the Dexter app Pay and get free washes with your rewards. It's a nice way to keep track of when your laundry will be done and ready. I will definitely be back to do bigger loads of laundry!",
   },
   {
     name: "Tony Far",

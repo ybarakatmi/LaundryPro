@@ -26,7 +26,7 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white shadow-sm">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link
           href="/#hero"
@@ -114,8 +114,9 @@ export function Navbar() {
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation"
+        style={{ willChange: "transform" }}
       >
-        <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3">
+        <div className="flex items-center justify-between border-b border-slate-100 bg-white px-4 py-3">
           <span className="font-semibold text-[#1e3a8a]">Menu</span>
           <button
             type="button"
@@ -126,7 +127,10 @@ export function Navbar() {
             <X className="h-5 w-5" />
           </button>
         </div>
-        <nav className="flex flex-col gap-1 p-4" aria-label="Mobile primary">
+        <nav
+          className="flex flex-col gap-1 bg-white p-4 [-webkit-overflow-scrolling:touch] overflow-y-auto overscroll-contain"
+          aria-label="Mobile primary"
+        >
           {navItems.map((item) =>
             item.href.startsWith("#") ? (
               <a

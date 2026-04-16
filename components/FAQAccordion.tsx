@@ -1,7 +1,9 @@
+import { EQUIPMENT_SIZE_RANGE, WASH_FOLD_PRICING } from "@/lib/constants";
+
 const faqs = [
   {
     q: "How much does a load of laundry cost?",
-    a: "Wash prices start at $3.75 for our smallest machines, with larger capacity machines available for bigger loads. Dryers start at just 25¢ per cycle — the lowest rates in Ypsilanti.",
+    a: "Wash prices depend on the machine size you choose—we have multiple washer sizes from compact units for small loads up to commercial-capacity drums for big batches and bedding. Prices start at $3.75 for our smallest machines, with larger machines priced for bigger loads. Dryers start at just 25¢ per cycle — the lowest rates in Ypsilanti.",
   },
   {
     q: "What are your hours?",
@@ -9,11 +11,11 @@ const faqs = [
   },
   {
     q: "What payment methods do you accept?",
-    a: "We accept coins, credit/debit cards, and the DexterPay mobile app. We also have a change machine on-site if you need quarters.",
+    a: "We accept coins, credit/debit cards, and the DexterPay mobile app (download the Dexter app Pay and get free washes with your rewards). We also have a change machine on-site if you need quarters.",
   },
   {
     q: "Do you offer wash & fold service?",
-    a: "Yes! Our wash & fold service starts at $1.50/lb. Drop off your laundry and we'll wash, dry, and neatly fold everything for you. Same-day and next-day options available.",
+    a: `Yes! ${WASH_FOLD_PRICING.sentence} Drop off your laundry and we'll wash, dry, and neatly fold everything for you.`,
   },
   {
     q: "Do you offer pick-up and delivery?",
@@ -21,11 +23,11 @@ const faqs = [
   },
   {
     q: "What size washing machines do you have?",
-    a: "We have three sizes of Dexter commercial washers — standard, large, and extra-large high-capacity machines. Our biggest washers can handle comforters, blankets, and large family loads.",
+    a: EQUIPMENT_SIZE_RANGE.faqMachineSizes,
   },
   {
     q: "Can I wash comforters and bulky items?",
-    a: "Absolutely! Our high-capacity washers are perfect for comforters, blankets, sleeping bags, and other bulky items.",
+    a: "Absolutely! Use our largest commercial-capacity washers for king-size comforters, heavy blankets, sleeping bags, and other bulky items—our smaller machines are ideal when you only need a light load.",
   },
   {
     q: "Do you have WiFi?",
@@ -41,7 +43,7 @@ const faqs = [
   },
   {
     q: "What is DexterPay?",
-    a: "DexterPay is a mobile app that lets you pay for and monitor your laundry from your phone. No coins needed — just scan, pay, and track your cycle in real time. Download it free on the App Store or Google Play.",
+    a: "DexterPay is the Dexter app that lets you pay for and monitor your laundry from your phone. Download the Dexter app Pay and get free washes with your rewards. No coins needed — just scan, pay, and track your cycle in real time. Download it free on the App Store or Google Play.",
   },
   {
     q: "Is the facility safe at night?",
@@ -69,7 +71,7 @@ const faqs = [
   },
   {
     q: "Can I do commercial or business laundry here?",
-    a: "Yes! Several local businesses use our facility for uniforms, towels, and linens. For large commercial needs, contact us to discuss options.",
+    a: "Yes! Several local businesses use our facility for uniforms, towels, and linens. Our commercial-capacity washers and dryers are built for bigger volumes—contact us for large or recurring commercial needs.",
   },
 ] as const;
 

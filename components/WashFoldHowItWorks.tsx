@@ -80,7 +80,7 @@ const steps: { title: string; description: string; icon: (props: { className?: s
   {
     title: "We Wash & Dry",
     description:
-      "Your laundry is cleaned using high-efficiency washers and eco-friendly detergents, with the right temperature and cycle for each fabric type. Our advanced equipment ensures a deep, hygienic clean every time.",
+      "Your laundry is cleaned using high-efficiency Dexter washers in the size that fits your load—from everyday baskets to bulky bedding—with eco-friendly detergents and the right temperature and cycle for each fabric type. Our advanced equipment ensures a deep, hygienic clean every time.",
     icon: WashDryIcon,
   },
   {

@@ -60,7 +60,7 @@ const steps: { title: string; description: string; icon: (props: { className?: s
   {
     title: "Load Up & Get Started",
     description:
-      "Bring in your laundry and choose from our variety of high-capacity washers — perfect for everything from a quick load to large bedding. Our machines are clearly labeled and easy to use.",
+      "Bring in your laundry and pick the washer size that fits—from compact machines for a small load to large and commercial-capacity washers for family piles, king-size comforters, and heavy bedding. Machines are clearly labeled and easy to use.",
     icon: LoadUpIcon,
   },
   {

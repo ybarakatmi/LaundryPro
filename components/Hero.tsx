@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/button-link";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, EQUIPMENT_SIZE_RANGE } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -35,8 +35,11 @@ export function Hero() {
             Ypsilanti&apos;s Newest, Cleanest Laundromat
           </h1>
           <p className="text-lg text-slate-100 sm:text-xl">
-            Brand-new machines. Open until 2 AM. Right next to Toarmina&apos;s
-            Pizza.
+            <span className="font-semibold text-white">
+              Brand-new Dexter washers &amp; dryers.
+            </span>{" "}
+            {EQUIPMENT_SIZE_RANGE.heroHint} Open until 2 AM. Right next to
+            Toarmina&apos;s Pizza.
           </p>
           <p className="text-sm font-medium text-slate-200">
             {BUSINESS.tagline} · Near Eastern Michigan University (EMU) campus

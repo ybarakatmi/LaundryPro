@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Section } from "@/components/ui/section";
+import { EQUIPMENT_SIZE_RANGE } from "@/lib/constants";
 
 const features = [
   {
     title: "High-Performance Machines",
-    description:
-      "Wash and dry your clothes in record time with our modern, energy-efficient Dexter machines. They're powerful enough for heavy items yet gentle on your everyday fabrics.",
+    description: EQUIPMENT_SIZE_RANGE.selfServiceWhyChooseMachines,
     image: "/washers-row.webp",
   },
   {

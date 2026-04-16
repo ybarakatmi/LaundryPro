@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Section } from "@/components/ui/section";
 import { ButtonLink } from "@/components/ui/button-link";
-import { SITE_URL, BUSINESS } from "@/lib/constants";
+import { SITE_URL, BUSINESS, WASH_FOLD_PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About Laundry Pro | Our Story | Ypsilanti MI",
   description:
-    "Laundry Pro is a family-owned laundromat in Ypsilanti, Michigan. Brand-new Dexter machines, wash & fold service, and a commitment to the EMU community. Learn our story.",
+    "Laundry Pro is a family-owned laundromat in Ypsilanti, Michigan. Brand-new multi-size Dexter washers and dryers, wash & fold service, and a commitment to the EMU community. Learn our story.",
   alternates: { canonical: `${SITE_URL}/about` },
 };
 
 const stats = [
   { value: "20+", label: "Brand-New Machines" },
   { value: "6 AM–2 AM", label: "Open Daily" },
-  { value: "$1.50", label: "Wash & Fold per lb" },
+   { value: WASH_FOLD_PRICING.statsValue, label: WASH_FOLD_PRICING.statsLabel },
   { value: "4.8", label: "Google Rating" },
 ];
 
@@ -23,19 +23,19 @@ const timeline = [
     year: "2025",
     title: "Laundry Pro Opens Its Doors",
     description:
-      "After months of planning and construction, Laundry Pro opened at 1510 Washtenaw Ave in Ypsilanti — right next to Toarmina's Pizza. Equipped with brand-new Dexter commercial machines, the facility was built from the ground up to serve the EMU campus and surrounding community.",
+      "After months of planning and construction, Laundry Pro opened at 1510 Washtenaw Ave in Ypsilanti — right next to Toarmina's Pizza. Equipped with brand-new Dexter commercial washers and dryers in a full range of sizes—from quick small loads to commercial-capacity equipment for bedding and big batches—the facility was built from the ground up to serve the EMU campus and surrounding community.",
   },
   {
     year: "2025",
     title: "DexterPay Mobile Payment Launches",
     description:
-      "We became one of the first laundromats in Washtenaw County to offer full mobile payment through the DexterPay app — no coins needed. Customers can pay, monitor cycles, and get notified when their laundry is done.",
+      "We became one of the first laundromats in Washtenaw County to offer full mobile payment through the DexterPay app. Download the Dexter app Pay and get free washes with your rewards—no coins needed. Customers can pay, monitor cycles, and get notified when their laundry is done.",
   },
   {
     year: "2025",
     title: "Wash & Fold Service Introduced",
     description:
-      "Responding to demand from busy students and families, we launched our professional wash & fold service at $1.50/lb with same-day turnaround. Drop-off, pick-up, and delivery options followed shortly after.",
+      "Responding to demand from busy students and families, we launched our professional wash & fold service with simple per-pound pricing: $1.50/lb for next-day turnaround and $2/lb for same-day service. Drop-off, pick-up, and delivery options followed shortly after.",
   },
   {
     year: "2026",
@@ -113,13 +113,16 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 leading-relaxed text-slate-700">
               Every detail was intentional. Brand-new{" "}
-              <strong>Dexter commercial machines</strong> for speed and
-              reliability. <strong>DexterPay mobile payment</strong> so no one
-              needs to carry quarters. <strong>Free WiFi</strong> and a clean,
-              well-lit space so you can actually enjoy the time you spend here.
-              And a location right next to{" "}
-              <strong>Toarmina&apos;s Pizza</strong> — because why not grab
-              dinner while your clothes are spinning?
+              <strong>Dexter commercial washers and dryers</strong> in multiple
+              sizes—so you can run a small personal load, a full family week, or
+              a king-size comforter in the right drum, with{" "}
+              <strong>commercial-capacity equipment</strong> for the biggest
+              jobs. Download the Dexter app Pay and get free washes with your
+              rewards, then enjoy <strong>DexterPay mobile payment</strong> so no
+              one needs to carry quarters. <strong>Free WiFi</strong> and a clean, well-lit
+              space so you can actually enjoy the time you spend here. And a
+              location right next to <strong>Toarmina&apos;s Pizza</strong> —
+              because why not grab dinner while your clothes are spinning?
             </p>
             <p className="mt-4 leading-relaxed text-slate-700">
               We&apos;re not trying to be the biggest. We&apos;re trying to be
